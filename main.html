@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Election Campaign Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section with Language Selection -->
+    <header>
+      <nav>
+        <button class="toggle-button" onclick="toggleNav()">☰</button>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#timer-container">Countdown</a></li>
+          <li><a href="#mission">Missions</a></li>
+        </ul>
+        <div class="language-selector">
+          <button onclick="setLanguage('en')">English</button>
+          <button onclick="setLanguage('si')">සිංහල</button>
+          <button onclick="setLanguage('ta')">தமிழ்</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+
+    <section id="home">
+      <div class="content">
+        <h1>
+          <span class="home_heading">Welcome to Our Campaign</span> <br />
+          <span
+            >Kesavan Sajanthan <br />
+            (Attorney-at-Law)</span
+          >
+        </h1>
+
+        <p>Join us to make a change for a better future.</p>
+      </div>
+      <div class="background-image"></div>
+    </section>
+
+    <!-- About Us Section -->
+
+    <!-- News Section -->
+    <section id="news">
+      <h1>Vote for</h1>
+      <img src="images/logo 1.png" alt="logo" />
+    </section>
+
+    <section id="timer-container">
+      <h1>Countdown Timer</h1>
+      <div class="timer" id="countdown">
+        <div class="time-box">
+          <span id="days">00</span>
+          <small>Days</small>
+        </div>
+        <div class="time-box">
+          <span id="hours">00</span>
+          <small>Hours</small>
+        </div>
+        <div class="time-box">
+          <span id="minutes">00</span>
+          <small>Minutes</small>
+        </div>
+        <div class="time-box">
+          <span id="seconds">00</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="mission">
+      <h2>Our Mission</h2>
+      <p>Learn more about our vision, our strategy, and how to achieve it.</p>
+
+      <div class="content-wrapper">
+        <div class="left">
+          <div class="box">
+            <h3>Medical Policy</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="box">
+            <h3>Our Campaign</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <div class="image-box">
+          <img src="images/mission.jpg" alt="Mission Image" />
+        </div>
+
+        <div class="right">
+          <div class="box">
+            <h3>Donations Engine</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="box">
+            <h3>Our Party Growing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section id="Ask">
+      <div class="ask_background-image"></div>
+      <div class="form-container">
+        <h2>Ask Questions</h2>
+        <form action="" method="post" name="contact-form">
+          <input
+            type="text"
+            name="your-name"
+            placeholder="Your Name"
+            required
+          />
+          <input type="text" name="your-number" placeholder="Number" required />
+
+          <input
+            type="email"
+            name="your-email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <div class="form-feedback">Please fill out all fields correctly.</div>
+          <button type="submit" value="Submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="raise">
+      <h1>Raise Your Voice</h1>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="party-info">
+          <h2 class="party-name">Ilankai Tamil Arasu Kadchi</h2>
+          <img
+            src="images/logo 1.png"
+            alt="Party Symbol"
+            class="party-symbol"
+          />
+        </div>
+        <div class="contact-info">
+          <p class="address">Address:319, Kandy Road, Chavakachcheri, Jaffna</p>
+          <p class="email">
+            Email:
+            <a href="mailto:info@kesavansajanthan.com"
+              >info@kesavansajanthan.com</a
+            >
+          </p>
+          <p class="tel">Tel: <a href="tel:+94122271117">+94 212271117</a></p>
+        </div>
+        <div class="social-media">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/share/EQpr9RL79pR3oNE5/?mibextid=LQQJ4d"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://x.com/ksajanthan?s=21" target="_blank"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/kesavan.sajanthan?igsh=dzZsaGZzNTB5OW5s"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kesavan-sajanthan-57b80568?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Ilankai Tamil Arasu Kadchi. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- External JavaScript File for Language Change -->
+<script>
+  const translations = {
+    en: {
+      homeTitle: "Welcome to Our Campaign",
+      homeContent: "Join us to make a change for the better future.",
+      aboutTitle: "About Us",
+      aboutContent:
+        "We are a team dedicated to bring positive change to our community.",
+      newsTitle: "Latest News",
+      news1Title: "Campaign Rally on October 10th",
+      news1Content: "We had a successful rally with thousands of supporters...",
+      galleryTitle: "Gallery",
+      policiesTitle: "Our Policies",
+      policy1: "Education for all",
+      policy2: "Healthcare improvements",
+      qaTitle: "Questions & Answers",
+      question1: "What is your plan for education?",
+      answer1: "We aim to provide free and quality education for all children.",
+      footerContent: "&copy; 2024 Election Campaign. All Rights Reserved.",
+    },
+    si: {
+      homeTitle: "අපේ ව්‍යාපෘතියට සාදරයෙන් පිළිගනිමු",
+      homeContent: "හොඳ අනාගතයක් සඳහා වෙනසක් කිරීමට අප සමඟ එක්වන්න.",
+      aboutTitle: "අප ගැන",
+      aboutContent: "අපි යහපත් වෙනසක් කිරිමට කැපවූ කණ්ඩායමක්.",
+      newsTitle: "නවතම පුවත්",
+      news1Title: "ඔක්තෝබර් 10 වැනි දින ව්‍යාපෘති රැලිය",
+      news1Content:
+        "අපට දස දහසක් සහායකයන් සමඟ සාර්ථක රැලියක් පවත්වා ගන්නට හැකි විය...",
+      galleryTitle: "ඡායාරූප ශාලාව",
+      policiesTitle: "අපගේ ප්‍රතිපත්ති",
+      policy1: "සියලු දෙනාට අධ්‍යාපනය",
+      policy2: "සෞඛ්‍ය සංවර්ධන",
+      qaTitle: "ප්‍රශ්න සහ පිළිතුරු",
+      question1: "ඔබගේ අධ්‍යාපන සැලැස්ම කුමක්ද?",
+      answer1:
+        "අපගේ අරමුණ සියලු දරුවන්ට නොමිලේ හා ගුණාත්මක අධ්‍යාපනය ලබාදීමයි.",
+      footerContent: "&copy; 2024 ව්‍යාපෘති. සියලු හිමිකම් ඇවිරිණි.",
+    },
+    ta: {
+      homeTitle: "எங்கள் பிரச்சாரத்திற்கு வரவேற்கிறோம்",
+      homeContent:
+        "சிறந்த எதிர்காலத்திற்கான மாற்றத்தை ஏற்படுத்த எங்களுக்கு சேருங்கள்.",
+      aboutTitle: "எங்களை பற்றி",
+      aboutContent:
+        "நாம் நம் சமூகத்தில் நல்ல மாற்றத்தை ஏற்படுத்த அர்ப்பணிக்கப்பட்ட குழு.",
+      newsTitle: "சமீபத்திய செய்திகள்",
+      news1Title: "அக்டோபர் 10 ஆம் தேதி பிரச்சார கூட்டம்",
+      news1Content:
+        "எங்களிடம் ஆயிரக்கணக்கான ஆதரவாளர்களுடன் வெற்றிகரமான கூட்டம் நடந்தது...",
+      galleryTitle: "நிகழ்வுகள்",
+      policiesTitle: "எங்கள் கொள்கைகள்",
+      policy1: "அனைவருக்கும் கல்வி",
+      policy2: "சுகாதார மேம்பாடுகள்",
+      qaTitle: "கேள்விகள் & பதில்கள்",
+      question1: "உங்கள் கல்வி திட்டம் என்ன?",
+      answer1:
+        "எல்லா குழந்தைகளுக்கும் இலவச மற்றும் தரமான கல்வி வழங்குவதே எங்கள் நோக்கம்.",
+      footerContent:
+        "&copy; 2024 தேர்தல் பிரச்சாரம். எல்லா உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+    },
+  };
+
+  function setLanguage(language) {
+    const elements = document.querySelectorAll("[data-key]");
+    elements.forEach((el) => {
+      const key = el.getAttribute("data-key");
+      el.innerHTML = translations[language][key];
+    });
+  }
+
+  // Set the target date
+  const countdownDate = new Date("November 13, 2024 23:59:59").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const timeLeft = countdownDate - now;
+
+    // Time calculations for days, hours, minutes, and seconds
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    // Display the result in the respective elements
+    document.getElementById("days").innerText = days
+      .toString()
+      .padStart(2, "0");
+    document.getElementById("hours").innerText = hours
+      .toString()
+      .padStart(2, "0");
+    document.getElementById("minutes").innerText = minutes
+      .toString()
+      .padStart(2, "0");
+    document.getElementById("seconds").innerText = seconds
+      .toString()
+      .padStart(2, "0");
+
+    // If the countdown is over, display a message
+    if (timeLeft < 0) {
+      clearInterval(timerInterval);
+      document.getElementById("countdown").innerHTML = "Time's Up!";
+    }
+  }
+
+  // Update the countdown every second
+  const timerInterval = setInterval(updateCountdown, 1000);
+  updateCountdown(); // Initial call to display the time immediately
+
+  function toggleNav() {
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("active");
+  }
+
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbyl_Bvt7XIVl_Nb3qniMOGfwFyXQwuonjKe_nS-vdOmSDhB6jRWSmWIxzbMsFYhVsCcEg/exec";
+
+  const form = document.forms["contact-form"];
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        // Here you can handle the response if needed
+        window.location.reload(); // Reload the page after a successful request
+      })
+      .catch((error) => console.error("Error!", error.message));
+  });
+</script>
+
+<style>
+  /* styles.css */
+
+  /* Define the color palette using CSS variables */
+  :root {
+    --primary-color: #2c3e50; /* Main headings, nav links */
+    --secondary-color: #18bc9c; /* Buttons, highlights */
+    --accent-color: #e74c3c; /* Hover effects, accents */
+    --background-color: #ecf0f1; /* Page background */
+    --text-color: #2c3e50; /* Main text */
+    --header-background: #c12403; /* Header background */
+    --footer-background: #ffffff; /* Footer background */
+  }
+
+  /* Reset default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body styling */
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  /* Header styling */
+  /* Header styling */
+  header {
+    background: linear-gradient(45deg, rgb(153, 2, 2), darkred, black);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    flex: 1 0 100%; /* Take full width */
+    text-align: center; /* Center the title */
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  .toggle-button {
+    display: none; /* Hide the toggle button on larger screens */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav-links li {
+    margin-right: 40px;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s;
+    color: #fff;
+  }
+
+  .nav-links li a:hover {
+    color: yellow;
+  }
+
+  .language-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .toggle-button {
+      display: block; /* Show the toggle button on small screens */
+    }
+
+    .nav-links {
+      display: none; /* Hide links initially */
+      flex-direction: column; /* Stack links vertically */
+      width: 100%;
+      text-align: center; /* Center the links */
+    }
+
+    .nav-links.active {
+      display: flex; /* Show links when active */
+    }
+
+    nav {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+    }
+  }
+
+  .language-selector button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: rgb(220, 134, 4);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .language-selector button:hover {
+    background-color: var(--accent-color);
+  }
+
+  /* Section styling */
+  section {
+    padding: 60px 20px;
+  }
+
+  section:nth-of-type(even) {
+    background-color: #fff;
+  }
+
+  section:nth-of-type(odd) {
+    background-color: var(--background-color);
+  }
+
+  /* Headings */
+  h1,
+  h2,
+  h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  /* Paragraphs */
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  #home {
+    display: flex;
+    height: 70vh; /* Full height of the viewport */
+    background-image: url("images/bg\ only.jpg"); /* Replace with your image path */
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Position image on the right */
+    background-repeat: no-repeat;
+  }
+
+  .content {
+    flex: 1; /* Take 50% of the width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 20px; /* Add some padding */
+    color: #fff;
+  }
+  .content h1 {
+    background: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home_heading {
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  .background-image {
+    flex: 1; /* Take 50% of the width */
+    background-image: url("images/s3.jpg"); /* Replace with your image path */
+    background-size: contain; /* Cover the entire div */
+    background-position: center; /* Position image on the right */
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 768px) {
+    #home {
+      flex-direction: column; /* Stack divs vertically on smaller screens */
+      height: auto; /* Allow the section to shrink */
+    }
+
+    .content,
+    .background-image {
+      flex: none; /* Reset flex property */
+      width: 100%; /* Full width */
+    }
+
+    .background-image {
+      height: 300px; /* Set a specific height for the image on mobile */
+      background-position: center; /* Center the image */
+    }
+  }
+  /* News Section */
+  #news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #news img {
+    width: 50%;
+    height: auto;
+  }
+  #news h1 {
+    background: transparent;
+  }
+
+  /* mission Section */
+  #mission {
+    text-align: center;
+    padding: 40px 60px;
+  }
+
+  #mission h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  #mission p {
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: #666;
+  }
+
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr; /* Left, Image, Right columns */
+    gap: 0px;
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between boxes */
+  }
+
+  .box {
+    text-align: left;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-box img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .content-wrapper {
+      grid-template-columns: 1fr; /* Full width for mobile */
+      grid-template-rows: auto auto auto; /* Stacks everything */
+    }
+
+    .left,
+    .right,
+    .image-box {
+      width: 100%;
+      text-align: center;
+    }
+
+    .box {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+
+  /* Q&A Section */
+  .qa-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .question {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .answer {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 2px solid var(--secondary-color);
+  }
+
+  #raise {
+    max-height: 50px;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Footer styling */
+  .footer {
+    background: linear-gradient(45deg, rgb(153, 2, 2), darkred, black);
+    color: #fff; /* White text */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between; /* Space out the columns */
+    align-items: center; /* Align items to the start of the flex container */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for larger screens */
+  }
+
+  .party-info {
+    flex: 1; /* Take up one column */
+    text-align: center; /* Center align the text */
+  }
+
+  .party-symbol {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-top: 10px; /* Space between name and image */
+  }
+
+  .contact-info {
+    flex: 1; /* Take up one column */
+    text-align: left; /* Align text to the left */
+  }
+  .contact-info a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+  }
+
+  .social-media {
+    flex: 1; /* Take up one column */
+    text-align: center; /* Center align the text */
+  }
+
+  .social-media ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+  }
+
+  .social-media li {
+    display: inline; /* Display list items inline */
+    margin: 0 10px; /* Space between icons */
+  }
+
+  .social-media a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+  }
+
+  .social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center; /* Center align footer bottom text */
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack the items vertically */
+      align-items: center; /* Center align */
+    }
+
+    .social-media ul {
+      display: flex; /* Change to flexbox */
+      flex-direction: column; /* Stack social media links vertically */
+      align-items: center; /* Center align */
+    }
+
+    .social-media li {
+      margin: 5px 0; /* Space between links */
+    }
+  }
+
+  #timer-container {
+    background: url("images/timer.jpg") no-repeat center center/cover;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+    min-height: 300px;
+  }
+
+  #timer-container h1 {
+    margin-bottom: 50px;
+    color: white;
+    background: transparent;
+  }
+
+  .timer {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .time-box {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .time-box span {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 500px) {
+    .timer {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .time-box {
+      width: 100%;
+    }
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    .gallery-container img {
+      width: calc(50% - 10px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+    }
+
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-bottom: 10px;
+    }
+
+    .language-selector {
+      margin-top: 10px;
+    }
+
+    .gallery-container img {
+      width: 100%;
+    }
+  }
+  /* Form Container */
+  #Ask {
+    background: linear-gradient(45deg, rgb(153, 2, 2), darkred, black);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh; /* Ensures full-screen height */
+  }
+
+  .ask_background-image {
+    flex: 1;
+    background: url("images/web\ banner\ mobile\ .jpg") no-repeat center
+      center/contain;
+    border-radius: 15px;
+    overflow: hidden;
+
+    /* Replace 'your-image-url.jpg' with the actual image path */
+  }
+  .form-container {
+    flex: 1;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Form Title */
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 24px;
+  }
+
+  /* Form Inputs */
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="password"],
+  .form-container input[type="number"],
+  .form-container select,
+  .form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+  }
+
+  /* Input Focus State */
+  .form-container input:focus,
+  .form-container select:focus,
+  .form-container textarea:focus {
+    border-color: var(--secondary-color);
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(24, 188, 156, 0.3);
+  }
+
+  /* Submit Button */
+  .form-container button {
+    width: 100%;
+    background: linear-gradient(45deg, rgb(153, 2, 2), darkred, black);
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Submit Button Hover */
+  .form-container button:hover {
+    background: linear-gradient(
+      45deg,
+      rgb(219, 113, 0),
+      rgb(139, 67, 0),
+      black
+    );
+  }
+
+  /* Form Feedback (e.g., success or error messages) */
+  .form-feedback {
+    font-size: 14px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    #Ask {
+      flex-direction: column;
+    }
+
+    .background-image {
+      flex: none;
+      height: 200px; /* Adjust the height for mobile view */
+    }
+
+    .form-container {
+      flex: none;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .form-container h2 {
+      font-size: 20px;
+    }
+
+    .form-container button {
+      font-size: 16px;
+    }
+  }
+
+  .footer h2,
+  h3 {
+    color: #fff;
+  }
+</style>
